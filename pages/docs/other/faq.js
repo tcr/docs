@@ -24,7 +24,7 @@ Check our [Twitter status account](https://twitter.com/zeit_status) and our [sta
 
 ## What are deployments and instances?
 
-Whenever you run \`now\` you create a frash new deployment with one running instance. Deployments are a version of a code saved inside the platform and ready to run and each one has an unique URL.
+Whenever you run \`now\` you create a frash new deployment with one running instance. Deployments are a version of a code saved inside Now platform and ready to run, each deployment has an unique URL.
 
 An instance represents a running copy of a deployment. A deployment can have:
 
@@ -101,7 +101,7 @@ You can just move your alias to an older deployment to have immediate rollbacks.
 
 ## Can I run a database on the Now platform?
 
-Now deployments **must** expose a [single](http://localhost:5800/docs/deployment-types/node#port-selection) [port](http://localhost:5800/docs/deployment-types/docker#port-selection) running an HTTP or WebSocket server. But thanks to Docker it is possible to run a database in the same container of the HTTP API consuming it.
+Now deployments **must** expose a [single](/docs/deployment-types/node#port-selection) [port](/docs/deployment-types/docker#port-selection) running an HTTP or WebSocket server. But thanks to Docker it is possible to run a database in the same container of the HTTP API consuming it.
 
 Note that due the immutability of deployments there are many cases where you will lose the data of your database.
 

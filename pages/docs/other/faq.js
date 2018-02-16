@@ -22,6 +22,19 @@ Yes, it is! We have been using Now internally and many companies are already usi
 
 Check our [Twitter status account](https://twitter.com/zeit_status) and our [status page](https://zeit-status.co/) to find current and real time updates
 
+## What are deployments and instances?
+
+Whenever you run \`now\` you create a frash new deployment with one running instance. Deployments are a version of a code saved inside the platform and ready to run and each one has an unique URL.
+
+An instance represents a running copy of a deployment. A deployment can have:
+
+- No running instances
+- One or more instances
+
+Under the same account is possible to have any amount of deployments and the limit of running instances is defined by your [current plan](/pricing).
+
+Note that in paid plans you can exceed the limit and pay the extra instances on demand.
+
 ## How do I deploy and alias in a single command?
 
 Create a [configuration file](/docs/features/configuration) with the keys [alias](/docs/features/configuration#alias-(string|array)) and [name](/docs/features/configuration#name-(string)) similar to this one:
@@ -67,7 +80,7 @@ Deployments belonging to the OSS plan have half the resources of a paid plan.
 
 The storage limit of any plan is shown under the plan on [the pricing page](/pricing).
 
-### How do I allocate more resources for my application?
+## How do I allocate more resources for my application?
 
 At the moment there is no way to change this. We do have this on the roadmap though!
 
@@ -183,7 +196,7 @@ You can define up to 10 levels of subdomains for a custom domain you own. For \`
 
 All the deployments made with a paid account or team are private by default.
 
-### Why do I still see the source code of my deployment if it is private?
+## Why do I still see the source code of my deployment if it is private?
 
 If you are logged in to [zeit.co](/login), you can still access the source when going to \`_src\`.
 
